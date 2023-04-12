@@ -1,0 +1,1 @@
+{"code"=>200, "status"=>"OK", "result"=>{"total"=>0, "total_omitted"=>0, "duration"=>0, "potential_deviation"=>0, "buckets"=>[], "query"=>"services.kubernetes.version_info.git_version=\"*\"", "field"=>"services.kubernetes.version_info.git_version"}}
