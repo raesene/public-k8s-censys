@@ -4,7 +4,7 @@ This is a repository containing daily information about publicly visible Kuberne
 
 For background about why it's possible to gather this information, you can see [this blog post](https://raesene.github.io/blog/2021/06/05/A-Census-of-Kubernetes-Clusters/) and [this blog post](https://raesene.github.io/blog/2022/07/03/lets-talk-about-kubernetes-on-the-internet/)
 
-The current dataset runs from September 2022 to 28th April 2023.
+The current dataset runs from September 2022 to 28th April 2023. The data is in `/data/[YEAR]`
 
 ## "Data Pipeline"
 
