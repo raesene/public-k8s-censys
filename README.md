@@ -2,7 +2,7 @@
 
 This is a repository containing daily information about publicly visible Kubernetes clusters taken from [Censys](https://censys.io/) results, which can be useful for undestanding the uptake of different Kubernetes versions and platforms in the wild.
 
-For background about why it's possible to gather this information, you can see [this blog post](https://raesene.github.io/blog/2021/06/05/A-Census-of-Kubernetes-Clusters/) and [this blog post](https://raesene.github.io/blog/2022/07/03/lets-talk-about-kubernetes-on-the-internet/)
+For background about why it's possible to gather this information, you can see [this blog post](https://raesene.github.io/blog/2021/06/05/A-Census-of-Kubernetes-Clusters/), [this blog post](https://raesene.github.io/blog/2022/07/03/lets-talk-about-kubernetes-on-the-internet/), and [this blog post](https://raesene.github.io/blog/2024/02/17/a-final-kubernetes-censys/)
 
 The dataset runs from September 2022 to 5th February 2024. The data is in `/data/[YEAR]`
 
