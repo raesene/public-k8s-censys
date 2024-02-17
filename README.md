@@ -4,13 +4,15 @@ This is a repository containing daily information about publicly visible Kuberne
 
 For background about why it's possible to gather this information, you can see [this blog post](https://raesene.github.io/blog/2021/06/05/A-Census-of-Kubernetes-Clusters/) and [this blog post](https://raesene.github.io/blog/2022/07/03/lets-talk-about-kubernetes-on-the-internet/)
 
-The current dataset runs from September 2022 to 28th April 2023. The data is in `/data/[YEAR]`
+The dataset runs from September 2022 to 5th February 2024. The data is in `/data/[YEAR]`
+
+Censys have now (as of 17th Feb 2024) cancelled their free API access, so there will be no further updates to this dataset.
 
 ## "Data Pipeline"
 
 It's important to undertstand how the data is sourced and gathered to understand limitations on what's available. The initial data comes from scraping the `/version` endpoint on exposed Kubernetes nodes. This is available by default in Kubernetes and in many Kubernetes distributions. A notable exception is AKS which does not make this available unauthenticated, so there are no stats related to AKS versions in this dataset.
 
-The `k8s-censys.rb` script runs daily to pull information from the Censys API. First it pulls the data from Censys with a single API call, it then writes that to a file called `[DATE]-k8s-version-info.json`.
+The `k8s-censys.rb` script ran daily to pull information from the Censys API. First it pulled the data from Censys with a single API call, it then wrote that to a file called `[DATE]-k8s-version-info.json`.
 
 The script then goes through the returned data and tries to assign it to a distribution based on strings in the version field. Many major distributions customise the k8s version number to include the product name, making this possible (the set of matches that look like `776c994` are for OpenShift which places a hex string in its version numbers) 
 
